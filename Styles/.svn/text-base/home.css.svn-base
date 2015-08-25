@@ -1,0 +1,309 @@
+
+@import url(http://fonts.googleapis.com/css?family=Lato:300);
+*{ margin : 0; padding : 0; 
+-webkit-user-select: none; /* Chrome/Safari */        
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+ */}
+a {text-decoration : none; }
+body{
+height : 100%;
+width : 100%;
+-webkit-transition:all 1s;
+transition:all 1s;
+}
+::-webkit-scrollbar { width : 5px; }
+::-webkit-scrollbar-track  {
+-webkit-box-shadow : inset 0 0 3px rgba(0,0,0,0.3);
+border-radius  :5px;
+}
+::-webkit-scrollbar-thumb{
+border-radius  :5px;
+-webkit-box-shadow : inset 0 0 3px rgba(0,0,0,0.4);
+}
+/* Start main header CSS */
+#main-header{
+display: block;
+top: 0;
+left: 0;
+right: 0;
+z-index: 110;
+background: white;
+min-height: 45px;
+}
+
+#main-header-wrapper{
+position: relative;
+z-index: 310;
+background: black;
+text-align: center;
+min-height: 45px;
+}
+
+#main-header-bar {
+margin: 0 auto;
+position: relative;
+z-index: 110;
+line-height: 1;
+background: black;
+overflow: hidden;
+min-height: 45px;
+max-width : 80%; /* previously 996px */
+}
+
+#main-header-logo{
+width  :120px;
+height : 45px;
+line-height : 40px;
+position : absolute;
+}
+
+#main-header-logo p{
+font-family : Helvetica;
+text-transform : uppercase;
+font-weight : bold;
+color : #fff;
+}
+/*
+#main-header-logo:hover{
+background-color : #F84242;
+} */
+/* End main header CSS */
+
+/* Start Playlist-Left CSS */
+
+#playlist-sidebar-left-wrapper{ 
+-moz-box-shadow:    inset 0 0 10px  #CEC7C7;
+-webkit-box-shadow: inset 0 0 100px 20px #CEC7C7;
+box-shadow:         inset 0 0 20px #CEC7C7;
+height : 94.3%;
+position : absolute;
+width : 200px;
+overflow : hidden;
+}
+#playlist-sidebar-left-wrapper:hover{
+overflow-y : auto;
+} 
+
+#airtist-seperator b{
+padding-left : 5px;
+font-family : Calibri;
+font-style : none;
+color : #FF7373;
+}
+
+#airtist{
+
+}
+#airtist li{
+line-height : 40px;
+height : 40px;
+cursor : pointer;
+}
+
+
+#airtist li a{
+padding-left : 45px;
+position : absolute;
+font-family : "Lato";
+color : #000;
+overflow: hidden;
+height: inherit;
+}
+#airtist li:hover{
+background-color : #FF7373;
+}
+#airtist-image{
+position : absolute;
+margin : 5px;
+width : 30px;
+height: 30px;
+border: 1px solid #CEC7C7;
+border-radius : 100%;
+}
+/* End Playlist-Left CSS */
+
+/* Start Main-Content CSS */
+
+#main-content-wrapper{
+height : 94.3%;
+margin-left : 200px;
+}
+
+#main-content{
+overflow : hidden;
+padding : 0 10px;
+width : auto;
+height : 100%;
+/* opacity : 0.5;
+pointer-events: none; */
+}
+
+/*start current song */
+#current-song-wrapper{
+display : none;
+height : 150px;
+position : relative;
+overflow : hidden;
+}
+
+#current-song-wrapper img{
+margin : 15px;
+overflow : hidden;
+height : 120px; width : 120px;
+position : absolute;
+}
+
+#current-song-details{
+padding : 15px 15px 15px 150px;
+height : 120px;
+width : auto;
+float : left;
+text-align : center;
+}
+#song-name {
+font-family : Lato;
+Font-size : 30px;
+}
+
+#Song-artist{
+font-family : Lato;
+Font-size : 15px;
+}
+
+/* end current song */
+#player-wrapper{
+width : auto;
+height : 150px;
+position : relative;
+}
+.inside-main-content{
+box-shadow: inset 0 0 20px #CEC7C7;
+background-color : whiteSmoke;
+margin-top : 10px;
+}
+#controls {
+padding : 25px;
+text-align : center;
+margin : 0 auto;
+width  : 90%;
+}
+#controls img{
+width : 100px;
+height : 100px;
+}
+/* Start 3 div wrapper */
+#three-div-wrapper{
+width : auto;
+height : 550px;
+}
+#songs-lists-wrapper{
+ width : auto;
+height : inherit;
+position : relative;
+padding : 5px;
+}
+
+ .inside-songs-list{
+ clear : both;
+ width : 32%;
+ height : inherit;
+ max-height : 540px;
+overflow : hidden;
+background-color : white;
+ }
+.inside-songs-list:hover{
+overflow-y: auto;
+overflow-x : hidden;
+}
+ #song-list{
+ position : absolute;
+ }
+ #recently-played{
+ position : absolute;
+ margin-left : 33.5%;
+
+ }
+ #my-list{
+ position : absolute;
+ margin-left : 67%;
+ float : right;
+ }
+ 
+/*  Start song-list  */
+.inside-songs-list ul{
+list-style : none;
+}
+.inside-songs-list ul li{
+height : 60px;
+overflow : hidden;
+position :  relative;
+cursor : pointer;
+background-color : white;
+margin-top : 5px;
+}
+
+.inside-songs-list ul li img{
+width : 50px; height : 50px;
+padding : 5px;
+}
+
+#play-now{
+float : right;
+}
+
+.inside-songs-list ul li:hover{
+box-shadow: inset 0 0 20px #CEC7C7;
+background-image:url(../images/play.png);
+background-repeat: no-repeat;
+background-position: right center;
+background-size : 40px 40px;
+}
+
+.list-top-header{
+z-index: 10;
+text-align : center;
+width : 400px;
+line-height : 45px;
+font-family : Lato;
+font-size : 25px;
+overflow : hidden;
+position : relative;
+color : #E77161;
+text-transform : uppercase;
+}
+
+.inside-songs-list ul span{
+font-family : Lato,Helvetica;
+font-size : 15px;
+text-transform : uppercase;
+overflow : hidden;
+padding : 5px;
+position : absolute;
+display : inline-block;
+}
+#album-movie-name{
+padding-top : 30px;
+font-size : 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  End song-list  */
+ 
+ 
+/* End 3 div wrapper */
+
+/* Start Main-Content CSS */
+

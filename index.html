@@ -1,0 +1,82 @@
+<html>
+	<head>
+		<title> FM Station </title>
+		<link rel="stylesheet" type="text/css" href="Styles/home.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"> </script>
+		<script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+		<script src="js/home.js"></script>
+	</head>
+	<!-- start body -->
+	<body>
+		<!-- start header -->
+		<div id="main-header">
+			<div id="main-header-wrapper">
+				<div id="main-header-bar">
+					<div id="main-header-logo">
+					<p> FM Station </p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- end header -->
+		<!-- start Playlist sidebar (left) -->
+		<div id="playlist-sidebar-left-wrapper">
+			<div id="airtist-seperator">
+				<!-- <b> Artists </b> -->
+				<ul id="airtist">
+					<li> <img id="airtist-image" src="images/arr.jpg" /><a href="#">A.R Rahman</a></li>
+					<li><img id="airtist-image" src="images/yuvan.jpg" /> <a href="#">Yuvan Shankar Raja</a> </li>
+					<li> <img id="airtist-image" src="images/dsp.jpg" /><a href="#">Devi Sree Prasad</a> </li>
+					<li> <img id="airtist-image" src="images/ilayaraja.jpg" /><a href="#">Ilayaraja</a> </li>
+				</ul>
+			</div>
+		</div>
+		<!-- end Playlist sidebar (left) -->
+		
+		<!-- start Center content -->
+		<div id="main-content-wrapper">
+			 <div id="main-content">  
+				<div id="current-song-wrapper" class="inside-main-content">
+					<img src="images/albums/danger-doom.jpg" />
+					<div id="current-song-details">
+						<span id="Song-name">Danger Doom</span></br>
+						<span id="Song-artist">Epitaph/Lex</span>
+					</div>
+				</div>
+				<div id="player-wrapper" class="inside-main-content"> 
+					<div id="controls">
+						<a class="button-controls" href="#"><img src="images/play.png" /><img src="images/pause.png" style="display:none"/></a>
+					</div>
+				</div>
+				<div id="three-div-wrapper" class="inside-main-content">
+					<div id="songs-lists-wrapper">
+						<div id="song-list" class="inside-songs-list">
+							<ul>
+								<p id= "selected-artist" class="list-top-header">Yuvan Shankar Raja </p>	
+								<li><img src="images/yuvan.jpg" /> <span id="song-name-draggable">Thakuthe Kan Thankuthe</span><span id="album-movie-name">Bana Kathadi</span><img class="play-now" src="images/add-to-list-1.png" style="float:right;"/></li>
+								<li><img src="images/arr.jpg" /> <span id="song-name-draggable">Athiradee</span><span id="album-movie-name">Shivaji</span><img class="add-to-list" src="images/add-to-list-1.png" style="float:right;opacity : .5;"/></li>
+							</ul>
+						</div>
+						<div id="recently-played" class="inside-songs-list">
+						<p class="list-top-header">recently played </p>
+						<ul>
+								<li><img src="images/yuvan.jpg" /> <span>Thakuthe Kan Thankuthe</span><span id="album-movie-name">Duration : 5:30</span></li>
+															</ul>
+						</div>
+						<div id="my-list" class="inside-songs-list">
+						<p class="list-top-header">my list </p>
+						<ul id="my-list-ul">
+								<li><img src="images/yuvan.jpg" /> <span>Thakuthe Kan Thankuthe</span><span id="album-movie-name">Duration : 5:30</span></li>
+								
+							</ul>
+						</div>
+					</div>
+				</div>
+			 </div>
+		</div>
+		<!-- end center content -->
+	</body>
+	<!-- end body -->
+</html>
